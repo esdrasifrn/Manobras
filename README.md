@@ -25,7 +25,7 @@ Explicação dos módulos/pastas
 - docker-compose: temos 3 containers(API, WEB(UI) e SQLServer)
 
 
-## Installation
+## Instalação do projeto
 - Tem como pré-requisito a instalação do docker no SO (Linux, Windows ou MAC)
 
 Para rodar o projeto, basta entrar no diretório que está o arquivo docker-compose.yml e executar o comando:
