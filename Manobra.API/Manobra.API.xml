@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Manobra.API</name>
+    </assembly>
+    <members>
+        <member name="M:Manobra.API.Controllers.CarroController.#ctor(Manobra.Domain.Interfaces.Services.IServiceCarro)">
+            <summary>
+            Api para gerenciar carros
+            </summary>
+            <param name="serviceCarro"></param>
+        </member>
+        <member name="M:Manobra.API.Controllers.CarroController.SalvarCarro(Manobra.Domain.DTO.CarroDTO)">
+            <summary>
+            Salvar carro no banco de dados
+            </summary>
+            <param name="carroDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Manobra.API.Controllers.CarroController.AtualizarCarro(Manobra.Domain.DTO.CarroDTO)">
+            <summary>
+            Atualiza carro no banco de dados
+            </summary>
+            <param name="carroDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Manobra.API.Controllers.CarroController.DeletaCarro(System.Nullable{System.Int32})">
+            <summary>
+            Deleta carro no banco de dados
+            </summary>
+            <param name="id"></param>
+            <returns></returns>       
+        </member>
+        <member name="M:Manobra.API.Controllers.CarroController.ListaCarros">
+            <summary>
+            Lista carros do banco de dados
+            </summary>     
+        </member>
+        <member name="M:Manobra.API.Controllers.CarroController.GerenciarManobra(Manobra.Domain.DTO.ManobrasDTO)">
+            <summary>
+            Salvar uma manobra no banco de dados
+            </summary>
+            <param name="manobrasDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Manobra.API.Controllers.ManobristaController.#ctor(Manobra.Domain.Interfaces.Services.IServiceManobrista)">
+            <summary>
+            Api para gerenciar manobristas
+            </summary>
+            <param name="serviceManobrista"></param>
+        </member>
+        <member name="M:Manobra.API.Controllers.ManobristaController.SalvarManobrista(Manobra.Domain.DTO.ManobristaDTO)">
+            <summary>
+            Salvar manobrista no banco de dados
+            </summary>
+            <param name="manobristaDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Manobra.API.Controllers.ManobristaController.AtualizarCarro(Manobra.Domain.DTO.ManobristaDTO)">
+            <summary>
+            Atualiza manobrista no banco de dados
+            </summary>
+            <param name="manobristaDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Manobra.API.Controllers.ManobristaController.DeletaManobrista(System.Nullable{System.Int32})">
+            <summary>
+            Deleta manobristas do banco de dados
+            </summary>
+            <param name="id"></param>
+            <returns></returns>       
+        </member>
+        <member name="M:Manobra.API.Controllers.ManobristaController.ListaManobristas">
+            <summary>
+            Lista manobristas do banco de dados
+            </summary>     
+        </member>
+    </members>
+</doc>

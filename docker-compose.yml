@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  manobra.web:
+    image: ${DOCKER_REGISTRY-}manobraweb
+    depends_on:
+    - manobra.api
+    - sqlserver
+    ports:
+    - "20000:80"
+    networks:
+    - manobra-network
+    build:
+      context: .
+      dockerfile: Manobra.Web/Dockerfile
+
+  manobra.api:
+    image: ${DOCKER_REGISTRY-}manobraapi  
+    depends_on:   
+    - sqlserver
+    ports:
+    - "20001:80"
+    networks:
+    - manobra-network
+    build:
+     context: .
+     dockerfile: Manobra.API/Dockerfile
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      - manobra-network
+    environment:
+      - SA_PASSWORD=Admin1q2w3e@
+      - ACCEPT_EULA=Y
+    ports:
+      - "1451:1433"
+ 
+
+networks:
+  manobra-network:
+    driver: bridge
+      

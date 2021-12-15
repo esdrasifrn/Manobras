@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - API", "01 - API", "{9D8F949E-6BCE-4D3B-810F-2D907A1AD362}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - UI", "02 - UI", "{1CF3F44F-AF82-4A2B-AC2D-28F3FBB7D76A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{793C40BC-ED78-4515-9AEA-2ABCF7AC5FC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infra", "04 - Infra", "{5890E5DC-9719-4C3D-A798-05D16D467BFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - DependencyInjection", "05 - DependencyInjection", "{7AC5577C-915C-4182-88C4-603EC5C11E49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Application", "06 - Application", "{79029302-4940-48BF-8824-291CA4B599EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manobra.Domain", "Manobra.Domain\Manobra.Domain.csproj", "{59E58382-8A2C-45D6-BA95-6AA80EC82112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manobra.Infra", "Manobra.Infra\Manobra.Infra.csproj", "{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.DependencyInjection", "SDK.DependencyInjection\SDK.DependencyInjection.csproj", "{9FEEEE0A-C276-4C4A-B5E1-B3F147658700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manobra.Application", "Manobra.Application\Manobra.Application.csproj", "{80FE4844-2861-457C-896C-FAA1317877B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manobra.API", "Manobra.API\Manobra.API.csproj", "{E0453E69-E451-44C4-8678-66F2299329A7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5478E157-9493-4EFC-A87D-F6D9C00DEAEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manobra.Web", "Manobra.Web\Manobra.Web.csproj", "{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59E58382-8A2C-45D6-BA95-6AA80EC82112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E58382-8A2C-45D6-BA95-6AA80EC82112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E58382-8A2C-45D6-BA95-6AA80EC82112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E58382-8A2C-45D6-BA95-6AA80EC82112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FEEEE0A-C276-4C4A-B5E1-B3F147658700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FEEEE0A-C276-4C4A-B5E1-B3F147658700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FEEEE0A-C276-4C4A-B5E1-B3F147658700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FEEEE0A-C276-4C4A-B5E1-B3F147658700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80FE4844-2861-457C-896C-FAA1317877B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80FE4844-2861-457C-896C-FAA1317877B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80FE4844-2861-457C-896C-FAA1317877B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80FE4844-2861-457C-896C-FAA1317877B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0453E69-E451-44C4-8678-66F2299329A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0453E69-E451-44C4-8678-66F2299329A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0453E69-E451-44C4-8678-66F2299329A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0453E69-E451-44C4-8678-66F2299329A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5478E157-9493-4EFC-A87D-F6D9C00DEAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5478E157-9493-4EFC-A87D-F6D9C00DEAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5478E157-9493-4EFC-A87D-F6D9C00DEAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5478E157-9493-4EFC-A87D-F6D9C00DEAEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{59E58382-8A2C-45D6-BA95-6AA80EC82112} = {793C40BC-ED78-4515-9AEA-2ABCF7AC5FC0}
+		{24C4D60C-1BA9-4D4F-B9E9-FBB5866F70E9} = {5890E5DC-9719-4C3D-A798-05D16D467BFF}
+		{9FEEEE0A-C276-4C4A-B5E1-B3F147658700} = {7AC5577C-915C-4182-88C4-603EC5C11E49}
+		{80FE4844-2861-457C-896C-FAA1317877B4} = {79029302-4940-48BF-8824-291CA4B599EF}
+		{E0453E69-E451-44C4-8678-66F2299329A7} = {9D8F949E-6BCE-4D3B-810F-2D907A1AD362}
+		{40EA5D97-35C8-4B7A-A75B-EDBBB1E0FE66} = {1CF3F44F-AF82-4A2B-AC2D-28F3FBB7D76A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2727BBE9-623D-4919-A4F4-1F8D4D25AC26}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿
+@{ ViewData["Title"] = "Novo Carro";
+Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+@model Manobra.Domain.DTO.CarroDTO
+
+
+<div class="card">
+    <form id="form-carro" method="post" class="card">
+        <div class="card-header">
+            <h3 class="mb-0 card-title">Dados do carro</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Marca *</label>
+                        <input type="text" class="form-control" value="@Model.Marca" name="Marca" placeholder="Marca">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Modelo</label>
+                        <input type="text" class="form-control" value="@Model.Modelo" name="Modelo" placeholder="Modelo">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Placa</label>
+                        <input type="text" class="form-control" value="@Model.Placa" name="Placa" placeholder="Placa">
+                    </div>
+                </div>            
+               
+                </div>
+            </div>
+
+            <div class="btn-list text-left col-md-6">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+                <a href="/Carro/Index" class="btn btn-danger"><i class="fa fa-backward"></i> Cancelar</a>
+            </div>   
+        <br />
+    </form>
+</div>

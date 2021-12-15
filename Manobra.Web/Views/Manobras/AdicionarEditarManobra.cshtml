@@ -1,0 +1,71 @@
+﻿
+@{ ViewData["Title"] = "Novo Manobra";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+@model Manobra.Domain.DTO.ManobrasDTO
+
+
+<div class="card">
+    <form id="form-manobras" method="post" class="card">
+        <div class="card-header">
+            <h3 class="mb-0 card-title">Dados da manobra</h3>
+        </div>
+        <div class="card-body">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Responsável pela manobra *</label>
+                    <select id="TipoAtivo"
+                            name="TipoAtivo"
+                            class="has-select2"
+                            data-select2-url="/Manobrista/PesquisaManobrista"
+                            data-is-materialize="false"
+                            data-js-callback-init-data="iniciar_manobrista"
+                            data-mapper-attr-id="ManobristaId"
+                            data-mapper-attr-text="NomeManobrista">
+                        <!-- Select2 -->
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="form-label">Carro *</label>
+                    <select id="Modelo"
+                            name="Modelo"
+                            class="has-select2"
+                            data-select2-url="/Carro/PesquisaCarros"
+                            data-is-materialize="false"
+                            data-js-callback-init-data="iniciar_carros"
+                            data-mapper-attr-id="CarroId"
+                            data-mapper-attr-text="NomeCarro">
+                        <!-- Select2 -->
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-list text-left col-md-6">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <a href="/Manobras/Index" class="btn btn-danger"><i class="fa fa-backward"></i> Cancelar</a>
+        </div>
+        <br />
+    </form>
+</div>
+
+
+@section Scripts{
+   
+    <script>
+        function iniciar_manobrista() {
+            var manobristas = [];
+            manobristas.push({ id: "@Model.ManobristaId", text: "@Model.NomeManobrista" });
+            return manobristas;
+        }
+
+        function iniciar_carros() {
+            var carros = [];
+            carros.push({ id: "@Model.CarroId", text: "@Model.NomeCarro" });
+            return carros;
+        }
+       
+    </script>
+}

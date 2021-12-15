@@ -1,0 +1,42 @@
+﻿@{ ViewData["Title"] = "Novo Manobrista";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+@model Manobra.Domain.DTO.ManobristaDTO
+
+
+<div class="card">
+    <form id="form-carro" method="post" class="card">
+        <div class="card-header">
+            <h3 class="mb-0 card-title">Dados do manobrista</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Nome *</label>
+                        <input type="text" class="form-control" value="@Model.Nome" name="Nome" placeholder="Nome">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">CPF</label>
+                        <input type="text" class="form-control" value="@Model.CPF" name="CPF" placeholder="CPF">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Nascimento</label>
+                        <input type="date" class="form-control" value="@Model.DataNascimento" asp-for="DataNascimento" placeholder="Nascimento">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="btn-list text-left col-md-6">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+            <a href="/Manobrista/Index" class="btn btn-danger"><i class="fa fa-backward"></i> Cancelar</a>
+        </div>
+        <br />
+    </form>
+</div>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Manobra.Domain\Manobra.Domain.csproj" />
+    <ProjectReference Include="..\Manobra.Infra\Manobra.Infra.csproj" />
+    <ProjectReference Include="..\SDK.DependencyInjection\SDK.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>
